@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        font-family: "Raleway", sans-serif;
+        background-color: #d8dada;
+        font-size: 19px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      header {
+        width: 98%;
+      }
+
+      #logo {
+        max-width: 200px;
+        margin: 3% 0 3% 3%;
+        float: left;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      #wrapper {
+        background-color: #f0f6fb;
+      }
+
+      #social {
+        float: left;
+        margin: 4% 2% 4% 3%;
+        list-style-type: none;
+        max-width: 700px;
+      }
+
+      li {
+        display: inline;
+        font-weight: bold;
+      }
+
+      li > {
+        max-width: 700px;
+      }
+      #thanksText {
+        font-size: 30px;
+        float: left;
+        margin: 2% 0 3% 3%;
+      }
+      #thanksText1 {
+        font-size: 20px;
+        float: left;
+        margin: 0% 0 3% 0.1%;
+      }
+      #total {
+        max-width: 200px;
+        margin: 3% 0 3% 3%;
+        float: left;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      #fare {
+        float: right;
+        margin: 4% 2% 4% 3%;
+        list-style-type: none;
+      }
+      #trip {
+        max-width: 200px;
+        margin: 0% 0 3% 3%;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #fare1 {
+        float: right;
+        margin: 0% 2% 4% 3%;
+        list-style-type: none;
+        font-size: 20px;
+      }
+      #line1 {
+        float: left;
+        height: 1.5px;
+        width: 93%;
+
+        margin: 0% 2% 4% 3%;
+      }
+      #line2 {
+        float: left;
+        height: 1.5px;
+        width: 93%;
+
+        margin: 0% 2% 4% 3%;
+      }
+      #text1 {
+        float: left;
+        width: 93%;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0% 2% 4% 3%;
+      }
+      #vimoLogo {
+        float: left;
+        margin: 0% 0% 0% 3%;
+        width: 35%;
+      }
+      #text2 {
+        float: left;
+        margin: 3% 0% 0% 3%;
+        width: 700px;
+        font-size: 15px;
+      }
+      h1,
+      p {
+        margin: 3%;
+      }
+      .btn {
+        float: left;
+        margin: 0 2% 4% 0;
+        background-color: #303840;
+        color: #f6faff;
+        text-decoration: none;
+        font-weight: 800;
+        padding: 8px 12px;
+        border-radius: 8px;
+        letter-spacing: 2px;
+      }
+      .btn1 {
+        float: left;
+        margin: 0 2% 4% 0;
+        background-color: #303840;
+        color: #f6faff;
+        text-decoration: none;
+        font-weight: 800;
+        padding: 8px 12px;
+        border-radius: 8px;
+        letter-spacing: 2px;
+      }
+      hr {
+        height: 1px;
+        background-color: #303840;
+        clear: both;
+        width: 96%;
+        margin: auto;
+      }
+
+      #contact {
+        text-align: center;
+        padding-bottom: 3%;
+        line-height: 16px;
+        font-size: 12px;
+        color: #303840;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div>
+        <div id="logo">point-to-point</div>
+        <div id="social">October 9, 2022</div>
+        <div id="thanksText">
+          Thanks for riding, Alexis (Alex)
+          <span id="thanksText1"
+            >We hope you enjoyed your ride this morning.</span
+          >
+        </div>
+      </div>
+      <div>
+        <!-- <div>
+          <span id="total">Total</span
+            ><span id="fare">${booking.customer_paid}</span>
+        </div>
+     
+      <div
+      id="line1" style="background-color: blue;"
+    ></div> -->
+        <div>
+          <span id="trip">Trip Fare</span
+          ><span id="fare1">${booking.customer_paid}</span>
+        </div>
+        <div id="line1" style="background-color: grey"></div>
+        <h2 id="text1">Payments</h2>
+        <div id="vimoLogo">
+          <img
+            style="float: left"
+            width="40px"
+            height="40px"
+            src="./assets/images/vimo.png"
+            alt=""
+          />
+          <div style="margin: 0% 0% 0% 5%">
+            <span style="font-weight: bold">Venmo - Alex-Njosse</span>
+            <span>10/9/22 8:26 AM</span>
+          </div>
+          <p id="text2">
+            A temporary hold of $7.04 was placed on your payment method Venmo -
+            Alex-Njosse. This is not a charge and will be removed. It should
+            disappear from your bank statement shortly.
+            <a href="" style="color: blue">Learn More</a>
+          </p>
+          <a
+            href=""
+            style="
+              color: blue;
+              cursor: pointer;
+              margin: 5% 0% 0% 3%;
+              font-size: 15px;
+              text-decoration: none;
+              float: left;
+            "
+          >
+            Download PDF
+          </a>
+          <h3 style="margin: 10% 0% 0% 3%; float: left">
+            You rode with JUSTIN
+          </h3>
+          <p style="margin: 3% 0% 0% 3%; float: left">4.93 Rating</p>
+          <p
+            style="
+              margin: 3% 0% 0% 3%;
+              float: left;
+              font-size: 15px;
+              width: 500px;
+            "
+          >
+            Drivers are critical to communities right now. Say thanks with a
+            tip.
+          </p>
+          <a
+            href=""
+            style="
+              margin: 10% 0% 0% 3%;
+              float: left;
+              background-color: blue;
+              color: white;
+              padding: 10px;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 10px;
+              margin-top: 10px;
+            "
+            >Rate or tip</a
+          >
+          <p
+            style="margin-top: 10px; float: left; width: 700px; font-size: 15px"
+          >
+            When you ride with Uber, your trips are insured in case of a covered
+            accident.
+          </p>
+          <a
+            href=""
+            style="
+              color: blue;
+              cursor: pointer;
+              margin: 5% 0% 0% 3%;
+              font-size: 15px;
+              text-decoration: none;
+              float: left;
+              width: 700px;
+            "
+          >
+            Learn more >
+          </a>
+          <img
+            style="float: left; margin: 10% 0% 0% 0%"
+            width="40px"
+            height="40px"
+            src="./assets/images/app.png"
+            alt=""
+          />
+          <p style="float: right; margin: 13% 30% 0% 0%">2.41 miles | 6 min</p>
+
+          <p style="float: left; margin: 10% 0% 0% 0%">
+            8:19 AM 5151 S State St, Murray, UT 84107, US
+          </p>
+
+          <p style="float: right">
+            8:25 AM 482 E Stonehedge Dr, Salt Lake City, UT 84107, USA
+          </p>
+        </div>
+          <ul
+            style="
+              float: left;
+              margin: 4% 2% 4% 0%;
+              list-style-type: none;
+              width: 97.5%;
+              background-color: blue;
+              padding: 10px;
+              color: white;
+            "
+          >
+            <li >Report lost item ></li>
+            <li style="margin-left: 10%">Contact support ></li>
+            <li style="margin-left: 10%">My trips ></li>
+          </ul>
+        
+      </div>
+      <div id="banner">
+        <img
+          src="https://mdbgo.io/dawidadach/responsiveemail/img/banner.png"
+          alt=""
+        />
+      </div>
+
+      <div class="one-col">
+        <h1>Learn how to create emails in HTML!</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+          eligendi beatae veniam totam ab quos. Ipsum expedita facilis
+          praesentium voluptates quam at provident laborum eum, id, culpa nulla
+          veniam nobis.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure non
+          exercitationem maxime nostrum eaque eos quaerat libero explicabo id?
+          Temporibus omnis qui dolorum provident debitis voluptatum veritatis
+          ipsa necessitatibus mollitia quaerat consequuntur, quibusdam quasi
+          nam? Similique voluptas voluptatibus natus assumenda.
+        </p>
+
+        <a href="#" class="btn">Learn more</a>
+
+        <hr />
+
+        <footer>
+          <p id="contact">
+            MDBootstrap <br />
+            Kijowska 7/U5 <br />
+            03-738 Warsaw, Poland <br />
+            contact@mdbootstrap.com
+          </p>
+        </footer>
+      </div>
+    </div>
+     
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f2a4f0b8a1.js" crossorigin="anonymous"></script>
+    <style>
+      
+        @media (min-width: 768px) {
+          .location{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 75%;
+          }
+          .footerLinks{
+            display: flex; 
+            align-items: flex-start;
+             justify-content: space-between;
+             width: 75%;
+          }
+          .pointtopointText{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+          }
+          .topNavFooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+          .line{
+            background-color: black; width: 2px; height: 90px;position: absolute;top: 10px;left:5px
+          }
+}
+@media (max-width: 768px) {
+          .location{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .mapImage{
+            margin-top: 25px;
+          }
+          .footerLinks{
+            display: flex; 
+          
+             justify-content: center;
+             flex-direction: column;
+             width: 75%;
+          }
+          .linksMenu{
+            margin-bottom: 20px;
+          }
+          .pointtopointText{
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+          }
+          .line{
+            background-color: black; width: 2px; height: 90px;position: absolute;top:10px;left:5px
+          }
+}
+    </style>
+  </head>
+  <body>
+    <main
+      style="
+      
+        background-color: white;
+        box-shadow: 0px 0 8px 0px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+      "
+    >
+      <header>
+        <nav style="position: relative; z-index: 10;color: white;  padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 32px;
+        padding-bottom: 32px;background-color: #1D74E7;box-shadow: rgba(0, 0, 0, 0.5);">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div class="pointtopointText" >Point-To-Point</div>
+              <div
+              style="
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+              "
+            >
+              <span>${booking.customer_paid}</span><span>${date}.${month}.${year}</span>
+            </div></div>
+            <div>
+              <div style="font-size: 24px; font-weight: 500; margin-top: 50px;">
+                Thanks for ridding, Alex(alexis)<span
+                  style="font-size: 15px; display: block"
+                  >We hope you enjoyed your ride this morning</span
+                >
+              </div>
+            </div>
+             
+            </div>
+
+           
+          
+        </nav>
+       
+      </header>
+      <div style="padding-left: 64px;
+      padding-right: 64px;
+      padding-top: 32px;
+      padding-bottom: 32px;">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+          "
+        >
+          <span style="font-size: 32px">Total</span
+          ><span style="font-size: 32px">${booking.customer_paid}</span>
+        </div>
+        <div
+          style="
+            height: 1px;
+            width: 100%;
+            background-color: blue;
+            margin-bottom: 25px;
+            margin-top: 25px;
+          "
+        ></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <span style="font-size: 18px">Trip Fare</span
+          ><span style="font-size: 18px">${booking.customer_paid}</span>
+        </div>
+
+        <div
+          style="
+            height: 1.5px;
+            width: 100%;
+            background-color: grey;
+            opacity: 0.5;
+            margin-top: 25px;
+            margin-bottom: 25px;
+          "
+        ></div>
+        
+        
+        <div>
+          <div style="font-size: 18px;margin-bottom: 25px;">Payments</div>
+<div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 25px;"><div style="display: flex;justify-content: space-between;align-items: center;"><div style="width: 30px; height: 20px; background-color: aqua;display: flex;flex-direction: row;align-items: center; justify-content: center;">V</div><div style="font-weight: 600; margin-left: 20px;">Venmo - Alex-Njosse <span style="display: block;opacity: 0.5; ">${date}.${month}.${year}</span></div></div><div><span style="font-size: 18px">$7.55</span></div></div>
+<div style="margin-bottom: 25px;"><p style="font-size: 15px;">A temporary hold of $7.04 was placed on your payment method Venmo - Alex-Njosse. This is not a charge and will be removed. It should disappear from your bank statement shotly. <a href="" style="color: blue;">Learn More</a></p></div>
+<div style="margin-bottom: 25px;"><button type="button" style="font-size: 18px; color: blue;background-color: white;border: 0 solid black; cursor: pointer;">Download PDF</button></div>
+<div style="width: 75%;margin-bottom: 25px;">
+<div style="margin-bottom: 25px;"><span style="font-size: 25px;font-weight: 500;">You rode with ${booking.driver_name}</span></div>
+<div style="display: flex;gap: 2rem;"><div style="display: flex;gap: .2rem;">4.93 <i class="fas fa-star"></i><span>Rating</span></div><div style="display: flex;gap: 1rem"><i class="fas fa-user-check"></i><span>Has passed a multi-step safety screen</span></div></div>
+<div style="display: flex;justify-content: space-between;margin-bottom: 25px;">
+</div>
+<div style="margin-bottom: 25px;"><span style="font-size: 18px;">Drivers are critical to communities right now. Say thanks with a tip.</span></div>
+<div style="margin-bottom: 25px;"><button type="button" style="padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-right: 30px; background-color: blue;border: 0 solid black; cursor: pointer;"><span style="color: white;">Rate or tip </span></button></div>
+<div><span style="font-size: 18px; color: #4e545b;">When you ride with Point to Point, your trips are insured in case of a covered accident.</span> <a href="" style="color: blue;display: block; font-size: 18px;margin-top: 12px;text-decoration: none;">Learn more  ></a></div>
+</div>
+<div style="margin-top: 50px;">
+  <div style="display: flex; align-items: center;margin-bottom: 25px;"><img src="/src/assets/images/app.png" alt="appLogo" width="30px" height="30px"><div><span style="font-size: 18px;margin-left: 15px; color: #4e545b;">2.41 miles | 6 min
+  </span></div></div>
+</div>
+<div  style="position: relative" class="location">
+  <div style="display: flex;flex-direction: column;justify-content: space-between;height: 200px;"><div style="display: flex;height: 100px;"><i class="fa-solid fa-location-dot"></i><span style="margin-left: 50px;">${booking.pickupAddress}</span></div>
+    <div style="display: flex;height: 100px;"><i class="fa-solid fa-location-dot"></i><span style="margin-left: 50px;">${booking.dropAddress}</span></div>
+      <div class="line"></div>
+  </div>
+  
+    <div class="mapImage"><img  src="/src/assets/images/mapImage.jpg" alt="map" height="300px"></div>
+</div>
+
+        </div>
+      </div>
+      <div style="padding-left: 64px;
+      padding-right: 64px;
+      padding-top: 32px;
+      padding-bottom: 32px;">
+      <footer style="bottom: 0; margin-top: 30px; background-color: black; ">
+        
+        <div class="topNavFooter" style="padding: 20px; background-color: blue;">
+          <a href="" style="font-size: 18px; color: white; text-decoration: none;margin-right: 15px; font-weight: bold;">Report lost item  ></a>
+          <a href="" style="font-size: 18px; color: white; text-decoration: none;margin-right: 15px; font-weight: bold;">Contact support  ></a>
+          <a href="" style="font-size: 18px; color: white; text-decoration: none;font-weight: bold;">My trips  ></a>
+        </div>
+      <div style="padding: 20px;">
+        <div class="pointtopointText">Point-To-Point</div>
+        <div
+          style="
+            height: 1.5px;
+            width: 100%;
+            background-color: grey;
+          opacity: .5;
+            margin-top: 25px;
+            margin-bottom: 25px;
+          "
+        ></div>
+       <div class="footerLinks"><div class="linksMenu" style="display: flex;flex-direction: column; justify-content: center;gap: 1rem"><a href="" style="text-decoration: none; color: white;font-size: 18px;">Forgot password</a><a href="" style="text-decoration: none; color: white;font-size: 18px;">Privacy</a><a href="" style="text-decoration: none; color: white;font-size: 18px;">Terms</a></div><div><span style="font-size: 18px; color: #9d9da3;">Uber Technologies
+        1515 3rd Street
+        San Francisco, CA 94158</span></div></div>
+      </div>
+        
+      </footer></div>
+      
+    </main>
+  </body>
+</html> -->
